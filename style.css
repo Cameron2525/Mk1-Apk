@@ -1,0 +1,143 @@
+/* style.css */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #121212;
+  color: #fbc02d;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(90deg, #1b1b1b, #121212);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fbc02d;
+  font-size: 28px;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+#tabs-top {
+  position: fixed;
+  top: 100px;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background-color: darkgreen;
+  display: flex;
+  z-index: 999;
+}
+
+#tabs-top a {
+  flex: 1;
+  text-align: center;
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+  line-height: 40px;
+}
+
+#main {
+  margin-top: 140px; /* header + tabs */
+  width: 90%;
+  max-width: 600px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #d32f2f88;
+  color: #fbc02d;
+}
+
+.info-box {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  padding: 12px;
+  text-decoration: none;
+  color: #fbc02d;
+  transition: background 0.3s ease;
+}
+
+.info-box:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.info-box img {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  margin-right: 15px;
+  object-fit: cover;
+}
+
+.info-box h3 {
+  margin: 0 0 6px 0;
+  font-weight: 900;
+  font-size: 22px;
+  flex-grow: 1;
+}
+
+.info-box p {
+  margin: 0;
+  font-size: 14px;
+  color: #fbc02dcc;
+}
+
+.info-box i.right {
+  font-size: 24px;
+  color: #fbc02d;
+}
+
+.gallery {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery img {
+  width: calc(20% - 8px);
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+@media (max-width: 500px) {
+  .gallery img {
+    width: calc(50% - 8px);
+    margin-bottom: 10px;
+  }
+}
+
+#tabs-bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background-color: forestgreen;
+  display: flex;
+  z-index: 1000;
+}
+
+#tabs-bottom a {
+  flex: 1;
+  text-align: center;
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+  line-height: 40px;
+}
+
+/* Add any additional shared styles here */
